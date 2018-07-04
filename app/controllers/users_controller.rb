@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+before_action :load_users, only:[:show, :edit, :update, :destory]
   def new
     @user = User.new
   end
@@ -16,5 +17,16 @@ class UsersController < ApplicationController
     else
       render 'new'
     end
+  end
+
+  def show
+
+  end
+  def edit
+  end
+  def update
+  end
+  def load_users
+    @user = User.find(params[:id])
   end
 end
