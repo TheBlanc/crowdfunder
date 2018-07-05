@@ -1,3 +1,4 @@
+include FactoryBot::Syntax::Methods
 ENV['RAILS_ENV'] ||= 'test'
 
 # To generate a test coverage report for the models,
@@ -13,4 +14,3 @@ end
 # Regular test setup
 require File.expand_path('../../config/environment', __FILE__)
 require 'rails/test_help'
-

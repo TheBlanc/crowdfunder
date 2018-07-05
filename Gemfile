@@ -36,6 +36,7 @@ end
 group :test do
   gem 'minitest-rails'
   gem 'minitest-reporters'
+  gem 'factory_bot_rails'
   gem 'rails-controller-testing'
   gem 'simplecov', require: false
   gem 'guard', '~> 2.14.0'

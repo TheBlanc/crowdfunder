@@ -1,2 +1,17 @@
-<h1> This is the user profile page </h1>
+<h1>  <%=@user.first_name%> <%=@user.last_name%> profile page </h1>
 <%= link_to "Edit Profile", edit_user_path(current_user) %>
+
+<h3> <%=@user.first_name%> Backed Projects list</h3>
+
+<%sum = 0 %>
+<%@user.pledges.each do | pledge|%>
+<p>
+project name: <%=pledge.project.title%> |
+Pledge amount: <%= pledge.dollar_amount  %>$
+<%sum += pledge.dollar_amount%>
+</p>
+<%end %>
+Total pledge amount: <%=sum %>
+
+<h3> <%=@user.first_name%> owned project's </h3>
+<%=
