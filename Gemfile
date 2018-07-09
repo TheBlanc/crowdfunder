@@ -23,6 +23,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
   gem 'faker'
+  gem 'factory_bot_rails'
 end
 
 group :development do
@@ -36,7 +37,7 @@ end
 group :test do
   gem 'minitest-rails'
   gem 'minitest-reporters'
-  gem 'factory_bot_rails'
+  # gem 'pry-rails'
   gem 'rails-controller-testing'
   gem 'simplecov', require: false
   gem 'guard', '~> 2.14.0'

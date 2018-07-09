@@ -1,4 +1,7 @@
+require 'factory_bot_rails'
+require 'minitest/pride'
 include FactoryBot::Syntax::Methods
+
 ENV['RAILS_ENV'] ||= 'test'
 
 # To generate a test coverage report for the models,

@@ -13,4 +13,8 @@ class Project < ActiveRecord::Base
       errors.add(:user, 'Project should not save without owner.')
     end
   end
+
+
+
+
 end
